@@ -1,0 +1,30 @@
+h1 {
+  font-family: 'Permanent Marker', cursive;
+  text-align: center;
+  color: #1CE;
+}
+
+.magic-number {
+  font-size: 28px;
+}
+
+.gems {
+  text-align: center;
+}
+
+.gems img {
+  border: 5px solid #1CE;
+  margin: 25px;
+  cursor: pointer;
+}
+
+.your-score {
+  border: 5px solid #1CE;
+  text-align: center;
+  padding: 15px;
+}
+
+.new-game {
+  text-align: center;
+  margin-top: 20px;
+}

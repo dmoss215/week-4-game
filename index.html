@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Crystals Game</title>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">  <!-- font-family: 'Permanent Marker', cursive; -->
+</head>
+
+
+<body>
+  <div class="container">
+    <div class="jumbotron">
+      <div class="title">
+        <h1>Crystals Game</h1>
+      </div>
+      <div class="new-game">
+        <button class="btn btn-lg btn-primary">
+          New Game
+        </button>
+      </div>
+    </div>
+
+    <div class="row">
+
+      <div class="col-md-8">
+        <div class="magic-number">
+          Click "New Game" to Get Your Number
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="wins-losses">
+          <p>Wins:</p>
+          <br>
+          <p>Losses:</p>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="row">
+      <div class="col-md-12">
+        <div class="gems">
+          <img id="one" src="assets/img/gem1.jpg" alt="">
+          <img id="two" src="assets/img/gem3.jpg" alt="">
+          <img id="three" src="assets/img/gem4.jpg" alt="">
+          <img id="four" src="assets/img/gem5.jpg" alt="">
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="your-score">
+        <p>Your Total Score Is: </p>
+        <br>
+        <br>
+        <p id="totalNum">0</p>
+      </div>
+    </div>
+
+
+
+
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+  <script src="app.js" charset="utf-8"></script>
+</body>
+</html>
