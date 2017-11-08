@@ -14,12 +14,14 @@ h1 {
 
 .gems img {
   border: 5px solid #1CE;
+  border-radius: 20px;
   margin: 25px;
   cursor: pointer;
 }
 
 .your-score {
   border: 5px solid #1CE;
+  border-radius: 20px;
   text-align: center;
   padding: 15px;
 }
@@ -27,4 +29,13 @@ h1 {
 .new-game {
   text-align: center;
   margin-top: 20px;
+}
+
+
+.your-score {
+  font-size: 28px;
+}
+
+#totalNum {
+  font-size: 34px;
 }
