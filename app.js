@@ -57,6 +57,10 @@ function resetGame() {
     winOrLose();
   })
 
+// =============  More Info Button ==================================================
+  $('.slide').on('click', function(){
+      $('#fade-in').toggleClass('show');
+  });
 // ======= If to add Wins and Losses =================================================
 
 function winOrLose() {
