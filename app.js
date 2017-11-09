@@ -25,11 +25,11 @@ function resetGame() {
 
 // ================= Generate the random number and put it into "magic-number" div ==============================
   $('.my-btn').on('click', function() {
-    resetGame();
+    resetGame();   
     $('.magic-number').text('Magic Number:' + " " + magicNum);
     $('#wins').text('You have won:' + wins);
     $('#losses').text('You have lost:' + losses);
-    $('your-score').text('0');
+    $('#totalNum').text('0');
   });
 
 
