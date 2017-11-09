@@ -3,6 +3,7 @@ h1 {
   text-align: center;
   color: #c9c9ff;
   margin-top: 0px;
+  margin-bottom: 30px;
 }
 
 .magic-number {
@@ -27,9 +28,9 @@ h1 {
   padding: 15px;
 }
 
-.new-game {
+.buttons {
   text-align: center;
-  margin-top: 20px;
+  margin: 10px;
 }
 
 
