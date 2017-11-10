@@ -12,7 +12,19 @@ function resetGame() {
   gemNum4 = gemNum();
   yourNum = 0;
   magicNum = getRandomInt();
+
+  $('.magic-number').text('Magic Number:' + " " + magicNum);
+  $('#wins').text('You have won:' + wins);
+  $('#losses').text('You have lost:' + losses);
+  $('#totalNum').text('0');
 }
+
+
+  if (!magicNum) {
+    // ( function( ) { alert('stop'); } );
+    $('.gems img').click(function() {alert("Press new game button!")});
+    $("#totalNum").text('Press New Game Button to Begin!!!');
+  }
 
 // =============== Functions to generate random numbers ============================================
   function getRandomInt() {
@@ -23,13 +35,9 @@ function resetGame() {
     return Math.floor(Math.random() * (12)) + 1;
   }
 
-// ================= Generate the random number and put it into "magic-number" div ==============================
+// ================= New Game Button Generate the random number and put it into "magic-number" div and reset the numbers assigned to gems and total score ==============================
   $('.my-btn').on('click', function() {
     resetGame();   
-    $('.magic-number').text('Magic Number:' + " " + magicNum);
-    $('#wins').text('You have won:' + wins);
-    $('#losses').text('You have lost:' + losses);
-    $('#totalNum').text('0');
   });
 
 
@@ -62,18 +70,20 @@ function resetGame() {
   $('.slide').on('click', function(){
       $('#fade-in').toggleClass('show');
   });
+
 // ======= If to add Wins and Losses =================================================
 
 function winOrLose() {
   if (magicNum == yourNum) {
     wins++;
-    $('#totalNum').text('You Win!!');
+    $('#totalNum').text('You Win!! New Game starting...');
     $('#wins').text('Wins:' + wins);
-    console.log('you win!');
+    setTimeout(resetGame, 2000);
   } else if (yourNum > magicNum) {
     losses++;
-    $('#totalNum').text('You Lose!!');
+    $('#totalNum').text('You Lose!!New Game starting...');
     $('#losses').text('Losses:' + losses);
+    setTimeout(resetGame, 2000);
   }
 }
 

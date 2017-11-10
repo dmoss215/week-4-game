@@ -1,5 +1,5 @@
 h1 {
-  font-family: 'Permanent Marker', cursive;
+  font-family: 'Sigmar One', cursive;
   text-align: center;
   color: #c9c9ff;
   margin-top: 0px;
@@ -7,6 +7,7 @@ h1 {
 }
 
 .magic-number {
+  font-family: 'Nobile', sans-serif;
   font-size: 28px;
 }
 
@@ -21,6 +22,11 @@ h1 {
   cursor: pointer;
 }
 
+.wins-losses {
+  font-size: 24px;
+  font-family: 'Nobile', sans-serif;
+}
+
 .your-score {
   border: 5px solid #c9c9ff;
   border-radius: 20px;
@@ -29,20 +35,24 @@ h1 {
 }
 
 .buttons {
+  font-family: 'Nobile', sans-serif;
   text-align: center;
   margin: 10px;
 }
 
 
 .your-score {
+  font-family: 'Nobile', sans-serif;
   font-size: 28px;
 }
 
 #totalNum {
+  font-family: 'Nobile', sans-serif;
   font-size: 34px;
 }
 
 .my-btn {
+  margin-left: 15px;
   background-color: #7fb8e5;
 }
 
@@ -57,15 +67,16 @@ h1 {
 }
 
 #fade-in {
-  height: 50px;
+  height: 70px;
   width: 100%;
   opacity: 0;
   transition: all .95s ease;
 }
 
 #fade-in.show {
+  font-family: 'Nobile', sans-serif;
   font-size: 18px;
   opacity: 1;
-  height: 50px;
+  height: 70px;
   width: 100%;
 }
