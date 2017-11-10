@@ -22,7 +22,6 @@ function resetGame() {
 
   if (!magicNum) {
     // ( function( ) { alert('stop'); } );
-    $('.gems img').click(function() {alert("Press new game button!")});
     $("#totalNum").text('Press New Game Button to Begin!!!');
   }
 
